@@ -1,23 +1,21 @@
 import React from 'react'
+import { useGetTodosQuery } from './store/apis/todosApis'
 
 const TodoApp = () => {
+
+     const algo = useGetTodosQuery();
+
   return (
-    <>
-    
-        <h1>Todo - RTK Query</h1>
+    <>  
+        <h1>Todos - RTK Query</h1>
         <hr />
         <h4>isLoading...</h4>
-        <h4>isFetching...</h4>
-        
         <pre>...</pre>
 
         <button>
             Next To Do
         </button>
-
-    
     </>
   )
 }
-
-export default TodoApp
+export default TodoApp;
